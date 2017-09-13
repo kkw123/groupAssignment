@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+div.gallery {
+    background-color: #424242;
+    display: block;
+    margin: 60px auto;
+    width: 1000px;
+}
+
+div.container {
+    position: relative;
+    float: left;
+    padding: 5%;
+    width: 140px;
+}
+
+div.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+
+div.container:hover .image {
+    opacity: 0.3;
+}
+
+div.container p {
+    text-align: center;
+    background-color: #2A61A2;
+    color: azure;
+    padding: 2px;
+}
