@@ -58,3 +58,71 @@ ul.navBar {
 	color: white;
 	background-color: #33332e
 	}
+
+.center-content {
+	position: relative;
+	padding-left:100px;
+}
+
+.inset-details {
+	margin-left: 50px;
+}
+
+.table {
+	border: 4px dotted black;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: lightblue;
+}
+
+.padding-right {
+	padding-right: 30px;
+}
+
+.table tr td {
+	padding-bottom: 20px;
+}
+
+.table tr td:nth-child(odd) {
+	font-weight: bold;
+}
+
+.orange {
+	color: darkorange;
+}
+
+.content {
+	position: relative;
+}
+
+.stripe {
+	position: absolute;
+	height: 100%;
+	width: 30px;
+	top: 0;
+	left: 5px;
+	background-color: lightgreen;
+	border-radius: 3px;
+	z-index: -1;
+}
+
+.years li {
+	font-size: 1.5em;
+	color: white;
+}
+
+.years li span {
+	font-size: 0.75em;
+	color: black;
+}
+
+.details {
+	padding-left: 10px;
+	font-size: 1em;
+	color: black;
+	margin-bottom: 20px;
+}
+
+.italics {
+	font-style: italic;
+}
