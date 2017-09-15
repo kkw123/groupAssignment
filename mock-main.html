@@ -1,74 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-
-.center-content {
-	position: relative;
-	padding-left:100px;}
-
-.bulletin {
-	display: inline-block;
-	border: 1px solid black;
-	border-radius: 10px;
-	margin-top: 20px;
-	margin-left: 10px;
-	padding-right: 220px;
-	background-color: gray;
-	min-height: 10%;
-	}
-.bulletin h4 {
-	padding-left: 8px;
-	margin: 0;
-	color: #e3df76;
-	}
-.bulletin a {
-	padding: 18px;
-	text-decoration: none;
-	display: block;
-	color: white;
-	}
-.bulletin a:hover {
-	color: silver;
-	}
-.events {
-	display: inline-block;
-	border: 1px solid black;
-	border-radius: 10px;
-	margin-left: 10px;
-	padding: 20px 20px;
-	background-color: gray;
-	max-width: 300px;
-	}
-.events h4 {
-	padding-left: 8px;
-	margin: 0;
-	color: #e3df76;
-	}
-.events img {
-	width: 144px;
-	padding: 2px;
-	}
-.event-name {
-	display: inline-block;
-	padding: 0px 49px;
-	text-decoration: none;
-	color: white;
-	}
-.events a:hover {
-	color: silver;
-	}
-.article {
-	padding: 2px;
-	display: inline-block;
-	margin-top: 2%;
-	margin-left: 2%;
-	padding-right: 15%;
-	}
-.article img {
-	height: 100px;
-	}
-</style>
+<link href="css/main-mock.css" rel="stylesheet" type="text/css">
 <link href="css/template.css" rel="stylesheet">
 
 </head>
@@ -80,9 +13,9 @@
 	<ul class="navBar" style = "padding-left:100px">
 	<img src="TCMC Images Docs/SiteImages/TCMC150100.jpg" width="150px" style="float:left">
 	<li class="dropdown">
-		<a class="dropdownbtn">Artist Profiles</a>
+		<a class="dropdownbtn" href="artist_prof.html">Artist Profiles</a>
 	</li>
-	<li class="dropdown" onmouseover="myFunction()">
+	<li class="dropdown">
 		<a class="dropdownbtn">Artists' Area</a>
 			<div class="dropdown-content">
 		<a href="#">Organise a concert</a>
@@ -130,8 +63,7 @@
 	<h4>Events</h4>
 			<a href="#"><img src="TCMC Images Docs/events/ACVCnewlogo.gif" width="100px"></a>
 			<a href="#"><img src="TCMC Images Docs/events/Aquapella360.jpg" width="100px"></a>
-			<a href="#" class="event-name">Event 1</a>
-			<a href="#" class="event-name">Event 2</a>
+
 </div>
 
 <div class="article">
@@ -153,12 +85,5 @@
 </div>
 
 </div>
-
-<script>
-function myFunction(){
-	var x = document.getElementByClassName("dropdown-content");
-		x.style.display = "block";
-	}
-</script>
 
 </body>
