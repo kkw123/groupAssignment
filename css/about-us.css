@@ -1,12 +1,8 @@
-.inset-details {
-	margin-left: 50px;
-}
 
 .table {
-	border: 4px dotted black;
+	border: 4px dotted red;
 	padding: 10px;
 	border-radius: 5px;
-	background-color: lightblue;
 }
 
 .padding-right {
@@ -22,7 +18,7 @@
 }
 
 .orange {
-	color: darkorange;
+	color: red;
 }
 
 .content {
@@ -34,18 +30,36 @@
 	height: 100%;
 	width: 30px;
 	top: 0;
-	left: 5px;
-	background-color: lightgreen;
+	left: 46%;
+	background-color: orangered;
 	border-radius: 3px;
 	z-index: -1;
 }
 
+
 .years li {
 	font-size: 1.5em;
-	color: white;
+	width: 40%;
+	margin-bottom: -50px;
+}
+
+.years > li:nth-child(odd) {
+	position: relative;
+	/* margin: -40px; */
+}
+
+.years > li:nth-child(even) {
+	position: relative;
+	left: 50%;
+	/* top: -200px; */
 }
 
 .years li span {
+	font-size: 1em;
+	font-weight: bold;
+	color: orangered;
+}
+.years li .details {
 	font-size: 0.75em;
 	color: black;
 }
@@ -59,4 +73,33 @@
 
 .italics {
 	font-style: italic;
+}
+
+.end {
+	margin-top: 100px;
+}
+
+.about-img {
+	width: 100%;
+	margin-top: -100px;
+	opacity: 0.5;
+}
+
+.about-header {
+	height: 200px;
+	overflow: hidden;
+}
+
+.looking-back-header {
+	display: flex;
+	align-items: center;
+}
+
+.looking-back-header h2 {
+	display: inline-block;
+}
+
+.looking-back-header img {
+	height: 100px;
+	margin-left: 20px;
 }

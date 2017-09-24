@@ -1,36 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-
-    <title>Login</title>
+  <title>
+    Register
+  </title>
+  <link href="css/template.css" rel="stylesheet">
+  <link href="css/register.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-<body>
+<body>  
+    <div id ="nav-bar"></div>
 
-<div id ="nav-bar"></div>
+  <div class="center-content">
+    
+    <h1 class="orange">Login</h1>
+    <p>
 
-<h1>Login</h1>
+    </p>
+    <form action="mock-main.html" onsubmit="return checkSubmit(event);">
+      <table class="register-table">
+        <tr>
+          <td>Username</td>
+          <td><input name="username" id="username" type="text" placeholder="johndoe123" onblur="checkEmpty(this);"></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+            <input name="password" id="password" type="password" onblur="checkEmpty(this);">
+            <div id="passwordRules" class="hidden password-rules">
+              Your password must be at least 8 characters long.
+            </div>
+          </td>
+        </tr>
+      </table>
+      <br/>
+      <input type="checkbox" checked="checked"> Remember me
+      <br><br>
+      <a href="#">Forgotten your password?</a>
+      <br><br>
+      <input type="submit" value="Login" class="register-btn" >
+      <p>
+        <a href="register.html">
+          Or register here.
+        </a>
+      </p>
+    </form>
+  </div>
+  <div id ="footer-fill"></div>
 
-<form action="member_page.html">
-    <label>Username</label><br>
-    <input type="text" placeholder="Username" name="user">
-    <br><br>
-    <label>Password</label><br>
-    <input type="password" placeholder="Password" name="password">
-    <br><br><br>
-    <button type="submit">Login</button>
-    <br><br>
-    <input type="checkbox" checked="checked"> Remember me
-    <br><br>
-    <a href="#">Forgotten your password?</a>
-</form>
-
-<script>
-	$("#nav-bar").load("nav.html")
-</script>
-
-
+  <script>
+      $("#nav-bar").load("nav.html")
+      $("#footer-fill").load("footer.html")
+    </script>
+  <script src="js/login-form.js"></script>
+  
 </body>
+
 </html>
+

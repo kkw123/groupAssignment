@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Register
+  </title>
+  <link href="css/template.css" rel="stylesheet">
+  <link href="css/register.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <!-- Just copy paste for more menus -->
+    <ul class="navBar" style="padding-left:100px">
+      <a href="mock-main.html"><img src="TCMC Images Docs/SiteImages/TCMC150100.jpg" width="150px" style="float:left"></a>
+      <li class="dropdown">
+        <a class="dropdownbtn" href="artist_prof.html">Artist Profiles</a>
+      </li>
+      <li class="dropdown" onmouseover="">
+        <a class="dropdownbtn">Artists' Area</a>
+        <div class="dropdown-content">
+          <a href="#">Organise a concert</a>
+          <a href="#">Sign up for publicity</a>
+          <a href="#">Register a profile</a>
+          <a href="#">Performer testimonials</a>
+          <a href="#">Ask us a question</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropdownbtn">Contact Us</a>
+        <div class="dropdown-content">
+          <a href="#">Contact Form</a>
+          <a href="#contact-details">Contact Details</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropdownbtn">About Us</a>
+        <div class="dropdown-content">
+          <a href="aboutus.html">Townsville Community Music Centre</a>
+          <a href="sponsorship.html">Sponsorship Details</a>
+        </div>
+      </li>
+      <li class="dropdown">
+          <a class="dropdownbtn" href="register.html">Registration</a>
+      </li>
+      <li class="dropdown">
+          <a class="dropdownbtn" href="login.html">Login</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="center-content">
+    
+    <h1 class="orange">Registration</h1>
+    <p class="grey">
+      Required fields are marked with a '*' .
+    </p>
+    <p>
+
+    </p>
+    <form action="" onsubmit="return checkSubmit(event);">
+      <table class="register-table">
+        <tr>
+          <td>Username *</td>
+          <td><input name="username" id="username" type="text" placeholder="johndoe123" onblur="checkEmpty(this);"></td>
+        </tr>
+        <tr>
+          <td>Password *</td>
+          <td>
+            <input name="password" id="password" type="password" onblur="passwordCheck(this);">
+            <div id="passwordRules" class="hidden password-rules">
+              Your password must be at least 8 characters long.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="padding-right">Password again *</td>
+          <td>
+            <input name="passwordagain" id="passwordagain" type="password" onblur="checkEmpty(this); passwordCheckMatch(this);">
+            <div id="passwordMatch" class="hidden password-rules">
+              Passwords don't match
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="empty-row"></td>
+        </tr>
+        <tr>
+          <td>Full Name *</td>
+          <td><input name="name" id="name" type="text" placeholder="John Doe" onblur="checkEmpty(this);"></td>
+        </tr>
+        <tr>
+          <td>Email *</td>
+          <td>
+            <input name="email" id="email" type="text" placeholder="johndoe@mail.com" onchange="emailCheck(this);">
+            <div id="emailRules" class="hidden password-rules">
+              Please enter a valid email
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Email again *</td>
+          <td>
+            <input name="emailagain" id="emailagain" type="text" placeholder="johndoe@mail.com" onblur="checkEmpty(this); emailCheckMatch();">
+            <div id="emailMatch" class="hidden password-rules">
+              Emails don't match
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Contact number</td>
+          <td><input name="phone" id="phone" type="text" placeholder="1234 5678"></td>
+        </tr>
+      </table>
+      <br/>
+      <input type="submit" value="Register" class="register-btn" >
+      <p class="grey">
+        Thank you for registering!
+      </p>
+    </form>
+  </div>
+  <footer>
+    <div class="inset-details" id="contact-details">
+
+      <h3 class="orange">
+        Civic Theatre
+      </h3>
+      <h4>
+        Contact Details
+      </h4>
+      <table class="table">
+        <tr>
+          <td>
+            Phone
+          </td>
+          <td>
+            07 4724 2086
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Mobile
+          </td>
+          <td>
+            0402 255 182
+          </td>
+        </tr>
+        <tr>
+          <td class="padding-right">
+            Postal Address
+          </td>
+          <td>
+            PO Box 1006,
+            <br/> Townsville,
+            <br/> Qld 4810
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Address
+          </td>
+          <td>
+            Townsville Civic Theatre,
+            <br/> 41 Boundary Street,
+            <br/> Townsville,
+            <br/> Qld 4810
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>
+            <a href="mailto:admin@townsvillemusic.org.au">admin@townsvillemusic.org.au</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="social-media">
+      <p>
+        <a href="https://www.facebook.com/Townsville-Community-Music-Centre-159636880763534/">
+          <img src="TCMC Images Docs/SiteImages/FBimages.png">
+        </a>
+      </p>
+    </div>
+    <div class="footer-spacing"></div>
+  </footer>
+
+  <script src="js/register-form.js"></script>
+  
+</body>
+
+</html>
+
