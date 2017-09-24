@@ -4,12 +4,18 @@ body {
 	margin: 0;
 	padding: 0;
 	}
+
+nav {
+	text-align: center;
+}
+
 ul.navBar {
 	padding: 0;
 	margin: 0 5%;
 	list-style-type: none;
 	overflow: hidden;
 	color: black;
+	display: inline-block;
 	}
 .dropdown {
 	float: left;
