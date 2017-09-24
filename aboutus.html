@@ -6,50 +6,12 @@
   </title>
   <link href="css/template.css" rel="stylesheet">
   <link href="css/about-us.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 
-  
-  <nav>
-    <!-- Just copy paste for more menus -->
-    <ul class="navBar" style="padding-left:100px">
-      <a href="mock-main.html"><img src="TCMC Images Docs/SiteImages/TCMC150100.jpg" width="150px" style="float:left"></a>
-      <li class="dropdown">
-        <a class="dropdownbtn" href="artist_prof.html">Artist Profiles</a>
-      </li>
-      <li class="dropdown" onmouseover="myFunction()">
-        <a class="dropdownbtn">Artists' Area</a>
-        <div class="dropdown-content">
-          <a href="#">Organise a concert</a>
-          <a href="#">Sign up for publicity</a>
-          <a href="#">Register a profile</a>
-          <a href="#">Performer testimonials</a>
-          <a href="#">Ask us a question</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <a class="dropdownbtn">Membership Registration</a>
-        <div class="dropdown-content">
-          <a href="#">Register</a>
-          <a href="#">Login</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <a class="dropdownbtn">Contact Us</a>
-        <div class="dropdown-content">
-          <a href="#">Contact Form</a>
-          <a href="#">Social Media Links</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <a class="dropdownbtn">About Us</a>
-        <div class="dropdown-content">
-          <a href="#">Townsville Community Music Centre</a>
-          <a href="#">Sponsorship Details</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
+<div id ="nav-bar"></div>
+
 
   <div class="center-content">
 
@@ -274,6 +236,11 @@
 
     </div>
   </div>
+
+<script>
+	$("#nav-bar").load("nav.html")
+</script>
+
 </body>
 
 </html>
