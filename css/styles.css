@@ -73,12 +73,3 @@ button {
 button:hover {
     opacity: 0.8;
 }
-
-div.footer {
-	width: 100%;
-	position: relative;
-	bottom: 0;
-	height: 200px;
-	color: white;
-	background-color: #33332e
-	}
