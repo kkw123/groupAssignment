@@ -9,7 +9,39 @@
     <title>Member Area</title>
 </head>
 <body>
-<div id ="nav-bar"></div>
+    <nav>
+        <!-- Just copy paste for more menus -->
+        <ul class="navBar" style="padding-left:100px">
+          <a href="index.html"><img src="TCMC Images Docs/SiteImages/TCMC150100.jpg" width="150px" style="float:left"></a>
+          <li class="dropdown">
+            <a class="dropdownbtn" href="artist_prof.html">Artist Profiles</a>
+          </li>
+          <li class="dropdown" onmouseover="">
+            <a class="dropdownbtn">Artists' Area</a>
+            <div class="dropdown-content">
+              <a href="organise.html">Organise a concert</a>
+              <a href="publicity.html">Sign up for publicity</a>
+              <a href="questions.html">Ask us a question</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a class="dropdownbtn">About Us</a>
+            <div class="dropdown-content">
+              <a href="aboutus.html">Townsville Community Music Centre</a>
+              <a href="sponsorship.html">Sponsorship Details</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a class="dropdownbtn" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="dropdown">
+              <a class="dropdownbtn" href="register.html">Registration</a>
+          </li>
+          <li class="dropdown">
+              <a class="dropdownbtn" href="login.html">Login</a>
+          </li>
+        </ul>
+      </nav>
 
 <div class="center-content">
     <div class="member_prof">
@@ -27,14 +59,26 @@
 
 </div>
 
-<div id ="footer-fill"></div>
-
-
-<!--script to add separate html nav-bar here-->
-<script>
-	$("#nav-bar").load("nav.html")
-    $("#footer-fill").load("footer.html")
-
-</script>
+<footer>
+        <div class="inset-details" id="contact-details">
+          <h4 class="orange margin-left-push">Contact Details</h4>
+          <ul class="footer-bar">
+            <li>
+              <b>Phone</b> 07 4724 2086
+            </li>
+            <li>
+              <b>Email</b> <a href="mailto:admin@townsvillemusic.org.au">admin@townsvillemusic.org.au</a>
+            </li>
+          </ul>
+        </div>
+          <div class="social-media">
+    
+            <p class="margin-left-push">
+              <a href="https://www.facebook.com/Townsville-Community-Music-Centre-159636880763534/">
+                <img src="TCMC Images Docs/SiteImages/FBimages.png">
+              </a>
+            </p>
+          </div>
+    </footer>
 </body>
 </html>
