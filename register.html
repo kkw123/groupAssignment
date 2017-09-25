@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Register
+  </title>
+  <link href="css/template.css" rel="stylesheet">
+  <link href="css/register.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  
+</head>
+<body>
+
+    <div id ="nav-bar"></div>
+
+  <div class="center-content">
+    
+    <h1 class="orange">Registration</h1>
+    <p class="grey">
+      Required fields are marked with a '*' .
+    </p>
+    <p>
+
+    </p>
+    <form action="" onsubmit="return checkSubmit(event);">
+      <table class="register-table">
+        <tr>
+          <td>Username *</td>
+          <td><input name="username" id="username" type="text" placeholder="johndoe123" onblur="checkEmpty(this);"></td>
+        </tr>
+        <tr>
+          <td>Password *</td>
+          <td>
+            <input name="password" id="password" type="password" onblur="passwordCheck(this);">
+            <div id="passwordRules" class="hidden password-rules">
+              Your password must be at least 8 characters long.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="padding-right">Password again *</td>
+          <td>
+            <input name="passwordagain" id="passwordagain" type="password" onblur="checkEmpty(this); passwordCheckMatch(this);">
+            <div id="passwordMatch" class="hidden password-rules">
+              Passwords don't match
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="empty-row"></td>
+        </tr>
+        <tr>
+          <td>Full Name *</td>
+          <td><input name="name" id="name" type="text" placeholder="John Doe" onblur="checkEmpty(this);"></td>
+        </tr>
+        <tr>
+          <td>Email *</td>
+          <td>
+            <input name="email" id="email" type="text" placeholder="johndoe@mail.com" onchange="emailCheck(this);">
+            <div id="emailRules" class="hidden password-rules">
+              Please enter a valid email
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Email again *</td>
+          <td>
+            <input name="emailagain" id="emailagain" type="text" placeholder="johndoe@mail.com" onblur="checkEmpty(this); emailCheckMatch();">
+            <div id="emailMatch" class="hidden password-rules">
+              Emails don't match
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Contact number</td>
+          <td><input name="phone" id="phone" type="text" placeholder="1234 5678"></td>
+        </tr>
+      </table>
+      <br/>
+      <input type="submit" value="Register" class="register-btn" >
+      <p class="grey">
+        Thank you for registering!
+      </p>
+    </form>
+  </div>
+ 
+  <div id ="footer-fill"></div>
+  
+    <script>
+        $("#nav-bar").load("nav.html")
+        $("#footer-fill").load("footer.html")
+      </script>
+
+  <script src="js/register-form.js"></script>
+  
+</body>
+
+</html>
+

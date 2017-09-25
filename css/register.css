@@ -1,0 +1,37 @@
+.empty-row {
+  height: 20px;
+}
+
+.register-btn {
+  font-size: 1.5em;
+  border-radius: 5px;
+  border-style: none;
+  padding: 15px;
+  color:white;
+  background-color: orangered;
+  cursor: pointer;
+}
+.register-table input{
+  font-size: 1.4em;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.invalid {
+  border: 2px solid red !important;
+}
+
+.password-rules {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.grey {
+  color: gray;
+}
+
+.hidden {
+  display: none;
+}

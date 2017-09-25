@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form id="applicationForm" name="applicationForm">
+	<h2>Membership Application Form</h2>
+	<label>First Name: <img src="images/cross.png" name="firstCross" id="firstCross"></label> 
+	<input type="text" name="firstName" id="firstName" onKeyUp="checkCharacterFirst(this)">
+	<br>
+	<label>Surname: <img src="images/cross.png" name="surCross" id="surCross"></label> 
+	<input type="text" name="surName" id="surName" onKeyUp="checkCharacterSur(this)">
+	<br>	
+	<label>Postal Address: <img src="images/cross.png" name="addressCross" id="addressCross"></label>
+	<textarea rows="4" cols="50" id="addressText" name="addressText" onKeyUp="checkAddress(this)"></textarea>
+	<br>
+	<label>Phone Number:</label>
+	<br>
+	<label>Day: <img src="images/cross.png" name="dayNoCross" id="dayNoCross"></label>
+	<input type="number" name="dayNo" id="dayNo" onKeyUp="checkNumberDay(this)">
+		<br>
+	<label>After Hours: <img src="images/cross.png" name="afterHoursNoCross" id="afterHoursNoCross"></label>
+	<input type="number" name="afterHoursNo" id="afterHoursNo" onKeyUp="checkNumberDay(this)">
+		<br>
+	<label>Mobile: <img src="images/cross.png" name="mobileNoCross" id="mobileNoCross"></label>
+	<input type="number" name="mobileNo" id="mobileNo" onKeyUp="checkNumberDay(this)">
+<form>
+</body>
+<script>
+function checkCharacterFirst(firstName) {
+		if (firstName.value != "") {
+			document.getElementById('firstCross').src = "images/tick.png";
+		} else {
+			document.getElementById('firstCross').src = "images/cross.png";
+		}
+}
+function checkCharacterSur(surName) {
+		if (surName.value != "") {
+			document.getElementById('surCross').src = "images/tick.png";
+		} else {
+			document.getElementById('surCross').src = "images/cross.png";
+		}
+}
+function checkAddress(address){
+		if (address.value != ""){
+			document.getElementById('addressCross').src = "images/tick.png";
+		} else {
+			document.getElementById('addressCross').src = "images/cross.png";
+		}
+}
+</script>
+</html>
