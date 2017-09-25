@@ -84,6 +84,10 @@
           <td><input name="name" id="name" type="text" placeholder="John Doe" onblur="checkEmpty(this);"></td>
         </tr>
         <tr>
+          <td>Postal Address </td>
+          <td><input name="postal" id="postal" type="text"></td>
+        </tr>
+        <tr>
           <td>Email *</td>
           <td>
             <input name="email" id="email" type="text" placeholder="johndoe@mail.com" onchange="emailCheck(this);">
@@ -102,8 +106,16 @@
           </td>
         </tr>
         <tr>
-          <td>Contact number</td>
+          <td>Contact number (Day)</td>
           <td><input name="phone" id="phone" type="text" placeholder="1234 5678"></td>
+        </tr>
+        <tr>
+          <td>Contact number (After Hours)</td>
+          <td><input name="phoneAA" id="phoneAA" type="text" placeholder="1234 5678"></td>
+        </tr>
+        <tr>
+          <td>Comments / Suggestions</td>
+          <td><textarea name="sugg" id="sugg" cols="30" rows="10"></textarea></td>
         </tr>
       </table>
       <br/>
