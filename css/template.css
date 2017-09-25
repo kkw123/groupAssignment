@@ -60,14 +60,6 @@ ul.navBar {
 	display: inline-block;
 	color: ;
 	}
-.footer {
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	height: 200px;
-	color: white;
-	background-color: #33332e
-	}
 
 .center-content {
 	position: relative;

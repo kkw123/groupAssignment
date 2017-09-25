@@ -15,7 +15,6 @@ h1 {
 
 div.gallery {
     background-color: #424242;
-    display: block;
     margin: 60px auto;
     width: 1000px;
 }
@@ -84,3 +83,12 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
+div.footer {
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	height: 200px;
+	color: white;
+	background-color: #33332e
+	}
