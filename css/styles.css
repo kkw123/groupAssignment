@@ -7,18 +7,6 @@ body {
 
 }
 
-h1 {
-    text-align: center;
-    font-family: "Droid Sans", sans-serif;
-    font-size: 80px;
-}
-
-div.gallery {
-    background-color: #424242;
-    margin: 60px auto;
-    width: 1000px;
-}
-
 div.container {
     position: relative;
     float: left;
@@ -42,9 +30,11 @@ div.container:hover .image {
 
 div.container p {
     text-align: center;
-    background-color: #2A61A2;
-    color: azure;
-    padding: 2px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    font-size: 18px;
+    border-radius: 3px;
 }
 
 form {
