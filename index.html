@@ -41,7 +41,9 @@
 	  </nav>
 
 <div class="center-content" style="text-align: center">
+<div id="login-info">
 
+</div>
 <div class="bulletin">
 	<h4>Bulletin Board</h4>
 			<a href="chordOrgan.html">Chord Organ 
@@ -96,6 +98,19 @@ Volunteer Singers / Musicians </a>
               </a>
             </p>
           </div>
-    </footer>
+		</footer>
+		
+		<script>
+			var name = localStorage.getItem("username");
+
+			if (name != "null") {
+				document.getElementById("login-info").innerHTML = "Welcome, " + name;
+				
+				localStorage.removeItem("username")
+				// change login button to logout
+				// cite this:
+				//https://www.w3schools.com/html/html5_webstorage.asp
+			}
+		</script>
 </body>
 </html>
