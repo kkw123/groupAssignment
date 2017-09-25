@@ -1,6 +1,8 @@
 .center-content {
 	position: relative;
-	padding-left:100px;}
+	text-align: center;
+	
+	}
 
 .bulletin {
 	display: inline-block;
