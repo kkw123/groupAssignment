@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="js/form.js"></script>
+<link href="css/application-form.css" rel="stylesheet">
 </head>
 <body>
 <form id="applicationForm" name="applicationForm">
@@ -17,36 +19,19 @@
 	<label>Phone Number:</label>
 	<br>
 	<label>Day: <img src="images/cross.png" name="dayNoCross" id="dayNoCross"></label>
-	<input type="number" name="dayNo" id="dayNo" onKeyUp="checkNumberDay(this)">
+	<select name="countryCode" id="countryCode" onChange="checkCountryCode()">
+		<option value="selectPls">Select</option>
+		<option value="singapore">+65</option>
+		<option value="my">+60</option>
+		<option value="indonesia">+62</option>
+	</select>
+	<input type="number" name="dayNo" id="dayNo" onKeyUp="checkNumberDay(this)" disabled>
 		<br>
-	<label>After Hours: <img src="images/cross.png" name="afterHoursNoCross" id="afterHoursNoCross"></label>
-	<input type="number" name="afterHoursNo" id="afterHoursNo" onKeyUp="checkNumberDay(this)">
+	<label>After Hours: <img src="images/cross.png" name="afterNoCross" id="afterNoCross"></label>
+	<input type="number" name="afterHoursNo" id="afterHoursNo" onKeyUp="checkNumberAfter(this)" disabled>
 		<br>
 	<label>Mobile: <img src="images/cross.png" name="mobileNoCross" id="mobileNoCross"></label>
-	<input type="number" name="mobileNo" id="mobileNo" onKeyUp="checkNumberDay(this)">
-<form>
+	<input type="number" name="mobileNo" id="mobileNo" onKeyUp="checkNumberMobile(this)" disabled>
+</form>
 </body>
-<script>
-function checkCharacterFirst(firstName) {
-		if (firstName.value != "") {
-			document.getElementById('firstCross').src = "images/tick.png";
-		} else {
-			document.getElementById('firstCross').src = "images/cross.png";
-		}
-}
-function checkCharacterSur(surName) {
-		if (surName.value != "") {
-			document.getElementById('surCross').src = "images/tick.png";
-		} else {
-			document.getElementById('surCross').src = "images/cross.png";
-		}
-}
-function checkAddress(address){
-		if (address.value != ""){
-			document.getElementById('addressCross').src = "images/tick.png";
-		} else {
-			document.getElementById('addressCross').src = "images/cross.png";
-		}
-}
-</script>
 </html>

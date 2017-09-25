@@ -1,0 +1,8 @@
+input, select, textarea{
+	border-radius: 25px;
+	padding: 5px;
+	margin: 10px 0px;
+}
+.addressCross {
+	margin-bottom: 20px;
+}
