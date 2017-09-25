@@ -43,5 +43,6 @@ function checkSubmit(e) {
     }
   }
 
+  localStorage.setItem("username", login);
   return valid;
 }
