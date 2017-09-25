@@ -1,55 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="css/template.css" rel="stylesheet">
 <link href="css/main-mock.css" rel="stylesheet" type="text/css">
-<link href="css/template.css" rel="stylesheet">
+	<!--js thingy for the script-->
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
 <body>
 
+<div id ="nav-bar"></div>
 
-<nav>
-<!-- Just copy paste for more menus -->
-	<ul class="navBar" style = "padding-left:100px">
-	<img src="TCMC Images Docs/SiteImages/TCMC150100.jpg" width="150px" style="float:left">
-	<li class="dropdown">
-		<a class="dropdownbtn" href="artist_prof.html">Artist Profiles</a>
-	</li>
-	<li class="dropdown">
-		<a class="dropdownbtn">Artists' Area</a>
-			<div class="dropdown-content">
-		<a href="#">Organise a concert</a>
-		<a href="#">Sign up for publicity</a>
-		<a href="#">Register a profile</a>
-		<a href="#">Performer testimonials</a>
-		<a href="#">Ask us a question</a>
-			</div>
-	</li>
-	<li class="dropdown">
-		<a class="dropdownbtn">Membership Registration</a>
-			<div class="dropdown-content">
-		<a href="#">Register</a>
-		<a href="#">Login</a>
-			</div>
-	</li>
-	<li class="dropdown">
-		<a class="dropdownbtn">Contact Us</a>
-			<div class="dropdown-content">
-		<a href="#">Contact Form</a>
-		<a href="#">Social Media Links</a>
-			</div>
-	</li>
-	<li class="dropdown">
-		<a class="dropdownbtn" href="aboutus.html">About Us</a>
-			<div class="dropdown-content">
-		<a href="#">Townsville Community Music Centre</a>
-		<a href="#">Sponsorship Details</a>
-			</div>
-	</li>
-	</ul>
-</nav>
-
-<div class="center-content">
+<div class="center-content" style="text-align: center">
 
 <div class="bulletin">
 	<h4>Bulletin Board</h4>
@@ -76,14 +38,13 @@
 
 </div>
 
+<div id ="footer-fill"></div>
 
-<div class="footer">
-	<h5>Contact Details</h5>
-	<p>Contact</p>
-	<p>Contact</p>
-	<p>Contact</p>
-</div>
 
-</div>
+<!--script to add separate html nav-bar here-->
+<script>
+	$("#nav-bar").load("nav.html")
+    $("#footer-fill").load("footer.html")
 
+</script>
 </body>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Register
+  </title>
+  <link href="css/template.css" rel="stylesheet">
+  <link href="css/register.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>  
+    <div id ="nav-bar"></div>
+
+  <div class="center-content">
+    
+    <h1 class="orange">Login</h1>
+    <p>
+
+    </p>
+    <form action="mock-main.html" onsubmit="return checkSubmit(event);">
+      <table class="register-table">
+        <tr>
+          <td>Username</td>
+          <td><input name="username" id="username" type="text" placeholder="johndoe123" onblur="checkEmpty(this);"></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+            <input name="password" id="password" type="password" onblur="checkEmpty(this);">
+            <div id="passwordRules" class="hidden password-rules">
+              Your password must be at least 8 characters long.
+            </div>
+          </td>
+        </tr>
+      </table>
+      <br/>
+      <input type="checkbox" checked="checked"> Remember me
+      <br><br>
+      <a href="#">Forgotten your password?</a>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <input type="submit" value="Login" class="register-btn" >
+      <p>
+        <a href="register.html">
+          Or register here.
+        </a>
+      </p>
+    </form>
+  </div>
+  <div id ="footer-fill"></div>
+
+  <script>
+      $("#nav-bar").load("nav.html")
+      $("#footer-fill").load("footer.html")
+    </script>
+  <script src="js/login-form.js"></script>
+  
+</body>
+
+</html>
+

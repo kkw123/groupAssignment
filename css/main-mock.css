@@ -1,44 +1,38 @@
-.center-content {
-	position: relative;
-	padding-left:100px;}
-
 .bulletin {
 	display: inline-block;
-	border: 1px solid black;
-	border-radius: 10px;
+    border: 4px dotted red;
+    border-radius: 10px;
 	margin-top: 20px;
 	margin-left: 10px;
 	padding-right: 220px;
-	background-color: gray;
 	min-height: 10%;
 	}
 .bulletin h4 {
 	padding-left: 8px;
 	margin: 0;
-	color: #e3df76;
+    font-size: 18px;
 	}
 .bulletin a {
 	padding: 18px;
 	text-decoration: none;
 	display: block;
-	color: white;
+	color: black;
 	}
 .bulletin a:hover {
-	color: silver;
+	color: red;
 	}
 .events {
 	display: inline-block;
-	border: 1px solid black;
-	border-radius: 10px;
+    border: 4px dotted red;
+    border-radius: 10px;
 	margin-left: 10px;
 	padding: 20px 20px;
-	background-color: gray;
 	max-width: 300px;
 	}
 .events h4 {
 	padding-left: 8px;
 	margin: 0;
-	color: #e3df76;
+    font-size: 18px;
 	}
 .events img {
 	width: 144px;
