@@ -24,7 +24,7 @@ div.image {
 }
 
 
-div.container:hover .image {
+div.container .image:hover {
     opacity: 0.3;
 }
 
