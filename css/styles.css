@@ -37,6 +37,25 @@ div.container p {
     border-radius: 3px;
 }
 
+.member_pic {
+    border-radius: 50%;
+    float: left;
+    width: 10%;
+    border: solid 2px gray;
+}
+
+.prof_info {
+    float: left;
+    margin-left: 70px;
+}
+
+.member_prof {
+    margin-top: 50px;
+    margin-left: 70px;
+    display: block;
+    position: relative;
+}
+
 form {
     background-color: #92a8d1;
     padding: 60px 50px 60px 50px;

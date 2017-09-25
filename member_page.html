@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/template.css" rel="stylesheet" type="text/css">
+
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <title>Member Area</title>
 </head>
 <body>
-testing
+<div id ="nav-bar"></div>
+
+<div class="center-content">
+    <div class="member_prof">
+
+    <img src="TCMC%20Images%20Docs/randomImages/Avivarandom1.jpg" alt="Avatar" class="member_pic">
+
+    <div class="prof_info">
+
+    <h1 class="orange">MEMBER ID</h1>
+        <h2 style="color: grey">NAME</h2>
+
+        <p>insert bio</p>
+    </div>
+    </div>
+
+</div>
+
+<div id ="footer-fill"></div>
+
+
+<!--script to add separate html nav-bar here-->
+<script>
+	$("#nav-bar").load("nav.html")
+    $("#footer-fill").load("footer.html")
+
+</script>
 </body>
 </html>
