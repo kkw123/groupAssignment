@@ -1,7 +1,7 @@
 console.log("loaded");
 
 var login = "henry";
-var loginPassword = "password123"
+var loginPassword = "password123";
 
 function checkEmpty(el) {
   // console.log("Checking");
