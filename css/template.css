@@ -79,12 +79,16 @@ nav {
 
 footer {
 	display: table;
-	margin-top: 100px;
-	padding-top: 50px;
+	margin-top: 50px;
+	padding-top: 10px;
 	width: 100%;
 	/* height: 300px; */
-	margin-bottom: 100px;
 	box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+}
+footer a {
+	color: white;
 }
 
 .footer-spacing {
@@ -131,4 +135,16 @@ footer {
 
 .text-center {
 	text-align: center;
+}
+
+.footer-bar {
+	list-style: none;
+}
+
+.footer-bar li {
+	display: inline;
+	margin-right: 20px;
+}
+.margin-left-push {
+	margin-left: 40px;
 }
