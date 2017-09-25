@@ -6,21 +6,28 @@
   </title>
   <link href="css/template.css" rel="stylesheet">
   <link href="css/register.css" rel="stylesheet">
-  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   
 </head>
 <body>
 
+<<<<<<< HEAD
     <nav>
     <!-- Just copy paste for more menus -->
     <ul class="navBar" style="padding-left:100px">
       <a href="mock-main.html"><img src="TCMC Images Docs/SiteImages/TCMC150100.jpg" width="150px" style="float:left"></a>
+=======
+  <nav>
+    <!-- Just copy paste for more menus -->
+    <ul class="navBar" style="padding-left:100px">
+      <a href="index.html"><img src="TCMC Images Docs/SiteImages/TCMC150100.jpg" width="150px" style="float:left"></a>
+>>>>>>> d34109e2d066c5a02c8e9b0e884882ff52777265
       <li class="dropdown">
         <a class="dropdownbtn" href="artist_prof.html">Artist Profiles</a>
       </li>
       <li class="dropdown" onmouseover="">
         <a class="dropdownbtn">Artists' Area</a>
         <div class="dropdown-content">
+<<<<<<< HEAD
           <a href="#">Organise a concert</a>
           <a href="#">Sign up for publicity</a>
           <a href="#">Register a profile</a>
@@ -33,6 +40,10 @@
         <div class="dropdown-content">
           <a href="#">Contact Form</a>
           <a href="#contact-details">Contact Details</a>
+=======
+          <a href="organise.html">Organise a concert</a>
+          <a href="publicity.html">Sign up for publicity</a>
+>>>>>>> d34109e2d066c5a02c8e9b0e884882ff52777265
         </div>
       </li>
       <li class="dropdown">
@@ -43,6 +54,12 @@
         </div>
       </li>
       <li class="dropdown">
+<<<<<<< HEAD
+=======
+        <a class="dropdownbtn" href="contactus.html">Contact Us</a>
+      </li>
+      <li class="dropdown">
+>>>>>>> d34109e2d066c5a02c8e9b0e884882ff52777265
           <a class="dropdownbtn" href="register.html">Registration</a>
       </li>
       <li class="dropdown">
@@ -92,6 +109,10 @@
           <td><input name="name" id="name" type="text" placeholder="John Doe" onblur="checkEmpty(this);"></td>
         </tr>
         <tr>
+          <td>Postal Address </td>
+          <td><input name="postal" id="postal" type="text"></td>
+        </tr>
+        <tr>
           <td>Email *</td>
           <td>
             <input name="email" id="email" type="text" placeholder="johndoe@mail.com" onchange="emailCheck(this);">
@@ -110,8 +131,16 @@
           </td>
         </tr>
         <tr>
-          <td>Contact number</td>
+          <td>Contact number (Day)</td>
           <td><input name="phone" id="phone" type="text" placeholder="1234 5678"></td>
+        </tr>
+        <tr>
+          <td>Contact number (After Hours)</td>
+          <td><input name="phoneAA" id="phoneAA" type="text" placeholder="1234 5678"></td>
+        </tr>
+        <tr>
+          <td>Comments / Suggestions</td>
+          <td><textarea name="sugg" id="sugg" cols="30" rows="10"></textarea></td>
         </tr>
       </table>
       <br/>
@@ -123,6 +152,7 @@
   </div>
  
   <footer>
+<<<<<<< HEAD
         <div class="inset-details" id="contact-details">
     
           <h3 class="orange">
@@ -187,14 +217,29 @@
         <div class="footer-spacing"></div>
       </footer>
 
+=======
+      <div class="inset-details" id="contact-details">
+        <h4 class="orange margin-left-push">Contact Details</h4>
+        <ul class="footer-bar">
+          <li>
+            <b>Phone</b> 07 4724 2086
+          </li>
+          <li>
+            <b>Email</b> <a href="mailto:admin@townsvillemusic.org.au">admin@townsvillemusic.org.au</a>
+          </li>
+        </ul>
+      </div>
+        <div class="social-media">
+>>>>>>> d34109e2d066c5a02c8e9b0e884882ff52777265
   
-    <script>
-        $("#nav-bar").load("nav.html")
-        $("#footer-fill").load("footer.html")
-      </script>
-
+          <p class="margin-left-push">
+            <a href="https://www.facebook.com/Townsville-Community-Music-Centre-159636880763534/">
+              <img src="TCMC Images Docs/SiteImages/FBimages.png">
+            </a>
+          </p>
+        </div>
+  </footer>
   <script src="js/register-form.js"></script>
-  
 </body>
 
 </html>

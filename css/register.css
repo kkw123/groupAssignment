@@ -11,8 +11,18 @@
   background-color: orangered;
   cursor: pointer;
 }
+.disabled-btn {
+  background-color: grey;
+}
 .register-table input{
   font-size: 1.4em;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+.register-table textarea{
+  font-size: 1em;
   border-radius: 5px;
   border-style: none;
   border: 1px solid lightgray;

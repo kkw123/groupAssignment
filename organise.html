@@ -2,12 +2,14 @@
 <html>
 <head>
   <title>
-    Register
+    Sponsorship Details
   </title>
   <link href="css/template.css" rel="stylesheet">
   <link href="css/register.css" rel="stylesheet">
+  
 </head>
-<body>  
+<body>
+
   <nav>
     <!-- Just copy paste for more menus -->
     <ul class="navBar" style="padding-left:100px">
@@ -43,42 +45,39 @@
 
   <div class="center-content">
     
-    <h1 class="orange">Login</h1>
-    <p>
-
+    <h1 class="orange">Organise A Concert</h1>
+    <p class="grey uppercase">
+      Hold your dream concert
     </p>
-    <form action="index.html" onsubmit="return checkSubmit(event);">
-      <table class="register-table">
-        <tr>
-          <td>Username</td>
-          <td><input name="username" id="username" type="text" onblur="checkEmpty(this);"></td>
-        </tr>
-        <tr>
-          <td>Password</td>
-          <td>
-            <input name="password" id="password" type="password" onblur="checkEmpty(this);">
-            <div id="passwordRules" class="hidden password-rules">
-              Your password must be at least 8 characters long.
-            </div>
-          </td>
-        </tr>
-      </table>
-      <br/>
-      <input type="checkbox" checked="checked"> Remember me
-      <br><br>
-      <a href="#">Forgotten your password?</a>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <input type="submit" value="Login" class="register-btn" >
-      <p>
-        <a href="register.html">
-          Or register here.
-        </a>
-      </p>
+    <form action="index.html">
+        <table class="register-table">
+            <tr>
+                <td><b>Full Name</b></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td class="padding-right"><b>Contact number</b></td>
+                <td><input type="text" name="phone" id="phone"></td>
+            </tr>
+            <tr>
+                <td><b>Contact email</b></td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><b>Concert Details</b></td>
+                <td><textarea name="details" id="details" placeholder="Share your vision for your concert with us!" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Send it!" class="register-btn">
+
+                </td>
+            </tr>
+        </table>
     </form>
   </div>
+ 
   <footer>
       <div class="inset-details" id="contact-details">
         <h4 class="orange margin-left-push">Contact Details</h4>
@@ -100,7 +99,6 @@
           </p>
         </div>
   </footer>
-  <script src="js/login-form.js"></script>
 </body>
 
 </html>
