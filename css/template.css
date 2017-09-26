@@ -64,6 +64,7 @@ ul.navBar {
 	position: relative;
 	padding-left:100px;
 	padding-right:100px;
+	min-height: 630px;
 }
 
 nav {
