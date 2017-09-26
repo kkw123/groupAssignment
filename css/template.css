@@ -1,5 +1,5 @@
 body {
-	font-family: Verdana;
+	font-family: Verdana, sans-serif;
 	
 	margin: 0;
 	padding: 0;
@@ -58,13 +58,13 @@ ul.navBar {
 	}
 .dropdown:hover .dropdownbtn{
 	display: inline-block;
-	color: ;
 	}
 
 .center-content {
 	position: relative;
 	padding-left:100px;
 	padding-right:100px;
+	min-height: 630px;
 }
 
 nav {
