@@ -23,6 +23,10 @@ div.image {
     backface-visibility: hidden;
 }
 
+.container .image {
+	border-radius: 5px;
+}
+
 
 div.container .image:hover {
     opacity: 0.3;
@@ -91,4 +95,12 @@ button {
 
 button:hover {
     opacity: 0.8;
+}
+
+.margin-20 {
+	margin: 20px;
+}
+
+.artist-profile {
+	border-radius: 10px;
 }
