@@ -1,0 +1,70 @@
+h1 {
+    color: #FF331F;
+    margin-bottom: 5%;
+}
+
+.prev {
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.next {
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+.material-icons {
+    opacity: 0.6;
+    color: #FF331F;
+    cursor: pointer;
+
+}
+
+.material-icons:hover {
+    opacity: 0.9;
+}
+
+.slides {
+    display: none;
+}
+
+.bulletin, .events, .article {
+    text-align: center;
+    padding: 3%;
+}
+
+.bulletin li {
+    list-style-type: none;
+    line-height: 250%;
+}
+
+.bulletin li a {
+    color: #FF331F;
+    text-decoration: none;
+}
+
+.bulletin li a:hover {
+    color: #FF7F11;
+    font-weight: bold;
+
+}
+
+.events a img {
+    margin: 0 5% 0 5%;
+}
+
+.article p {
+    padding: 2% 10% 0 10%;
+    line-height: 200%;
+}
+
+.container {
+    width: 100%;
+    min-height: 510px;
+    background-color:#FBFBFF ;
+    margin: auto;
+    display: block;
+    position: relative;
+}

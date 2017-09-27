@@ -3,7 +3,8 @@
 <head>
 	<title>Home</title>
 	<link href="css/template.css" rel="stylesheet">
-<link href="css/main-mock.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="js/w3.js"></script>
 
 </head>
@@ -12,43 +13,66 @@
 <div w3-include-html="nav.html"></div>
 
 
-<div class="center-content" style="text-align: center">
+<div class="center-content">
 <div id="login-info">
 
 </div>
-<div class="bulletin">
-	<h4>Bulletin Board</h4>
-			<a href="chordOrgan.html">Chord Organ 
-Volunteer Singers / Musicians </a>
-			<a href="TCBlogo.html">TCB logo CALL OUT FOR MUSOS 
-</a>
-			<a href="rouvasAcademy.html">Chord Organ Rouvas Academy of Singing 
-</a>
-			<a href="musicTeaching.html">Chord Organ Music teaching by Effortless Technique 
-</a>
-<a href="metropolitanOpera.html">Metropolitan Opera productions </a>
-<a href="officeAdministratorRequired.html">Office Administrator required!
-</a>
-<a href="dearFellowMusos.html">Dear Fellow Musos 
-</a>
+
+
+	<div class="container">
+		<div class="slides bulletin">
+			<ul><h1>Bulletin Board</h1>
+				<li><a href="chordOrgan.html">Chord Organ Volunteer Singers / Musicians </a></li>
+				<li><a href="TCBlogo.html">TCB logo CALL OUT FOR MUSOS</a></li>
+				<li><a href="rouvasAcademy.html">Chord Organ Rouvas Academy of Singing</a></li>
+				<li><a href="musicTeaching.html">Chord Organ Music teaching by Effortless Technique</a></li>
+				<li><a href="metropolitanOpera.html">Metropolitan Opera productions </a></li>
+				<li><a href="officeAdministratorRequired.html">Office Administrator required!</a></li>
+				<li><a href="dearFellowMusos.html">Dear Fellow Musos</a></li>
+			</ul>
+		</div>
+		<div class="slides events">
+			<h1>Events</h1>
+			<a href="#"><img src="TCMC Images Docs/events/ACVCnewlogo.gif" width="250px"></a>
+			<a href="#"><img src="TCMC Images Docs/events/Aquapella360.jpg" width="250px"></a>
+		</div>
+		<div class="slides article">
+			<h1>Featured Event Article</h1>
+			<img src="TCMC Images Docs/events/Attori4w300.jpg">
+			<p>Harbourside Duo is a new ensemble performing in Townsville and North Queensland featuring Monica Martin on Violin and David Roberts on Classical Guitar.
+			We perform a fine selection of music from Latin, Jazz, Celtic, Classical and popular styles.
+			Harbourside Duo is available for Corporate Functions, Weddings and private gatherings.
+			For further information or bookings contact<br>
+				<span style="font-weight: bold">David Roberts</span><br>
+				<span style="font-weight:bold; color: #FF331F">0459 239 290</span></p>
+			<a href="http://www.davidrobertsguitar.com.au/Harbourside-Duo.html">Visit our website</a>
+		</div>
+		<i class="material-icons prev" style="font-size: 50px" onclick="plusDivs(-1)">chevron_left</i>
+		<i class="material-icons next" style="font-size: 50px" onclick="plusDivs(1)">chevron_right</i>
+
+	</div>
+
 </div>
 
-<div class="events">
-	<h4>Events</h4>
-			<a href="#"><img src="TCMC Images Docs/events/ACVCnewlogo.gif" width="100px"></a>
-			<a href="#"><img src="TCMC Images Docs/events/Aquapella360.jpg" width="100px"></a>
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
 
-</div>
+	function plusDivs(n) {
+	    showDivs(slideIndex += n);
+    }
 
-<div class="article">
-	<h3>Featured Event Title </h3>
-	<img src="TCMC Images Docs/events/Attori4w300.jpg">
-	<p>Blah Blah</p>
-	<a href="#">Read More...</a>
-	
-</div>
-
-</div>
+    function showDivs(n) {
+	    var i;
+	    var x = document.getElementsByClassName("slides");
+	    if (n > x.length) {slideIndex = 1}
+	    if (n < 1) {slideIndex = x.length}
+	    for (i = 0; i < x.length; i++) {
+	        x[i].style.display = "none";
+		}
+		x[slideIndex-1].style.display = "block";
+    }
+</script>
 
 <div w3-include-html="footer.html"></div>
 
